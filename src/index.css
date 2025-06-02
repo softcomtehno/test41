@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #e53935;
+  --primary-dark: #c62828;
+  --secondary: #ff8f00;
+  --secondary-dark: #ef6c00;
+  --accent: #4caf50;
+  --text: #333333;
+  --background: #f9f9f9;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-primary {
+  @apply bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300;
+}
+
+.btn-secondary {
+  @apply bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-6 rounded-lg transition duration-300;
+}
+
+.btn-outline {
+  @apply border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-medium py-2 px-6 rounded-lg transition duration-300;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+.section {
+  @apply py-16;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg;
+}
+
+.card-hover {
+  @apply transform hover:-translate-y-1;
+}
+
+/* Animation for cart */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-cart-add {
+  animation: bounce 0.5s ease;
+}
