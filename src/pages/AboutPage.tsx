@@ -174,8 +174,7 @@ const AboutPage: React.FC = () => {
                 <div className="mt-8">
                   <h4 className="font-semibold mb-4">Мы на карте</h4>
                   <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                    <p className="text-gray-600">Карта Чолпон-Аты</p>
-                    {/* In a real app, you would integrate a map here */}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23477.79044681614!2d77.06440675525552!3d42.64601486385484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3884f13ef943156b%3A0xb9927fc9c380d0d8!2z0KfQvtC70L_QvtC9LdCQ0YLQsA!5e0!3m2!1sru!2skg!4v1748859570059!5m2!1sru!2skg" width="100%" height="100%" ></iframe>
                   </div>
                 </div>
               </div>
